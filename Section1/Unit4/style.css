@@ -15,6 +15,9 @@ button{
     font-size:20px;
     font-weight:700;
 }
+button:active{
+    background-color:beige;
+}
 .calculator {
     width: 350px;
     height: 600px;
@@ -48,9 +51,13 @@ button{
     margin:0 10px;
     display:flex;
     justify-content: space-around;
+    border-radius: 10px;
 }
 .bottom_box:not(:first-child,:last-child)>button:last-child{
     background-color: rgb(124, 228, 164);
+}
+.bottom_box:not(:first-child,:last-child)>button:last-child:active{
+    background-color: rgb(124, 207, 228);
 }
 .bottom_box:nth-child(1)>button{
     width:40%;
@@ -64,4 +71,8 @@ button{
 .bottom_box:last-child>button:not(:first-child){
     background-color: rgb(124, 228, 164);
 }
+.bottom_box:last-child>button:not(:first-child):active{
+    background-color: rgb(124, 207, 228);
+}
+
 

@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.cal{
+    width:400px;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.header{
+    background-color: hsl(50deg 3% 36%);
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.onoffbtn{
+    background-color:white;
+    width:40px;
+    height:20px;
+    color:black;
+    margin:0;
+    font-size:10px;
+}
+.buttondiv{
+    margin-bottom:5px;
+    margin-right:25px;
+}
+.result{
+    display: flex;
+    border:15px solid hsl(77deg 6% 52%);
+    border-radius:10px;
+    align-items: center;
+    font-size:50px;
+    justify-content: flex-end;
+    background-color: hsl(75deg 10% 62%);
+    margin:0 auto;
+    width:350px;
+    height:100px;
+}
+.main{
+    background-color:hsl(50deg 21% 83%);
+    flex:3;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.border_main{
+    width:350px;
+    height:400px;
+    margin:0 auto;
+    background-color:hsl(50deg 21% 83%);
+    display:flex;
+}
+button{
+    flex:1;
+    border:none;
+    background-color:#5cc4ff;
+    margin:5px;
+    border-radius:10px;
+    color:white;
+    font-size:30px;
+    font-weight:700;
+}
+
+.main_box:nth-child(1)>button:first-child,
+.main_box:nth-child(2)>button:first-child{
+    background-color:#ff6ac1;
+}
+.main_box:nth-child(1)>button:first-child:active,
+.main_box:nth-child(2)>button:first-child:active{
+    background-color: rgb(134, 235, 164);
+}
+.main_box{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+.main_box:first-child>button{
+    margin-left:0;
+}
+.main_box:last-child>button{
+    margin-right:0;
+}
+.main_box>button:first-child{
+    margin-top:0;
+}
+.main_box>button:last-child{
+    margin-bottom:0;
+}
+.main_box:last-child>button:last-child{
+    flex:2.13;
+}
+button:active{
+    background-color: aqua;
+}
